@@ -1,15 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Website của Duy</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding-top: 50px; background: #f0f2f5; }
-        h1 { color: #0066cc; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f1124">
+<title>Nguyễn Lê Hoàng Duy | Giới thiệu bản thân</title>
+<meta name="description" content="Trang giới thiệu cá nhân của Nguyễn Lê Hoàng Duy, học sinh trường THPT Trung Phú.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👋%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Lexend:wght@600;800&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Xin chào, website của mình đã chạy thành công! 🎉</h1>
-    <p>Host miễn phí bằng GitHub Pages</p>
+<div class="progress" id="progress"></div>
+<div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">Duy.</a>
+  <button class="burger" id="burger" aria-label="Mở menu"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">Giới thiệu</a>
+    <a href="#skills">Sở thích</a>
+    <a href="#journey">Hành trình</a>
+    <a href="#contact">Liên hệ</a>
+    <button class="theme" id="theme" aria-label="Đổi giao diện sáng/tối">🌙</button>
+  </nav>
+</header>
+
+<main>
+<!-- ===== MỞ ĐẦU ===== -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hi reveal">Xin chào, mình là</p>
+    <h1 class="reveal">Nguyễn Lê Hoàng Duy</h1>
+    <p class="typing reveal"><span id="typed"></span><b class="caret"></b></p>
+    <p class="lead reveal">Học sinh trường THPT Trung Phú, luôn tò mò, thích học hỏi và muốn tạo ra những điều thú vị mỗi ngày.</p>
+    <div class="cta reveal">
+      <a href="#about" class="btn primary">Tìm hiểu về mình</a>
+      <a href="#contact" class="btn ghost">Liên hệ</a>
+    </div>
+  </div>
+  <div class="avatar reveal">
+    <div class="ring"></div>
+    <!-- SỬA: muốn dùng ảnh thật thì thay chữ HD bằng <img src="avatar.jpg" alt="Ảnh Duy"> -->
+    <div class="face">HD</div>
+  </div>
+</section>
+
+<!-- ===== GIỚI THIỆU ===== -->
+<section id="about">
+  <h2 class="reveal">Về mình</h2>
+  <div class="about">
+    <div>
+      <p class="reveal">Mình là <b>Nguyễn Lê Hoàng Duy</b>, sinh ngày 09/03/2010, hiện đang là học sinh trường <b>THPT Trung Phú</b>. Mình thích học hỏi những điều mới và luôn muốn biến ý tưởng thành sản phẩm thực tế.</p>
+      <p class="reveal">Trang web nhỏ này là nơi mình chia sẻ đôi nét về bản thân. Mình tin rằng mỗi ngày tiến bộ thêm một chút, rồi sẽ đi được rất xa.</p>
+    </div>
+    <div class="reveal">
+      <ul class="card tilt info">
+        <li><b>Họ và tên</b><span>Nguyễn Lê Hoàng Duy</span></li>
+        <li><b>Ngày sinh</b><span>09/03/2010 <em id="age"></em></span></li>
+        <li><b>Trường</b><span>THPT Trung Phú</span></li>
+        <li><b>Châm ngôn</b><span>Mỗi ngày tiến bộ một chút</span></li>
+        <!-- SỬA: thêm dòng mới theo mẫu <li><b>Tên mục</b><span>Nội dung</span></li> -->
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SỞ THÍCH & KỸ NĂNG (nội dung mẫu, hãy sửa) ===== -->
+<section id="skills">
+  <h2 class="reveal">Sở thích và kỹ năng</h2>
+  <div class="skills">
+    <div class="card reveal">
+      <div class="skill"><div class="row"><span>Tin học</span><span>80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+      <div class="skill"><div class="row"><span>Tiếng Anh</span><span>70%</span></div><div class="bar"><i style="--w:70%"></i></div></div>
+      <div class="skill"><div class="row"><span>Làm việc nhóm</span><span>85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+      <div class="skill"><div class="row"><span>Thuyết trình</span><span>75%</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+    </div>
+    <div class="chips reveal">
+      <span class="chip">💻 Công nghệ</span>
+      <span class="chip">🎧 Âm nhạc</span>
+      <span class="chip">⚽ Thể thao</span>
+      <span class="chip">📚 Đọc sách</span>
+      <span class="chip">🎮 Chơi game</span>
+      <span class="chip">✈️ Khám phá nơi mới</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HÀNH TRÌNH (nội dung mẫu, hãy sửa) ===== -->
+<section id="journey">
+  <h2 class="reveal">Hành trình</h2>
+  <div class="timeline">
+    <div class="tl reveal"><time>2010</time><h3>Chào đời</h3><p>Ngày 09/03/2010, mình có mặt trên đời.</p></div>
+    <div class="tl reveal"><time>2025</time><h3>Bước vào THPT Trung Phú</h3><p>Bắt đầu hành trình cấp 3 với nhiều trải nghiệm mới.</p></div>
+    <div class="tl reveal"><time>Hiện tại</time><h3>Tiếp tục học hỏi</h3><p>Rèn luyện kiến thức, kỹ năng và làm những dự án đầu tay.</p></div>
+    <div class="tl reveal"><time>Tương lai</time><h3>Những mục tiêu phía trước</h3><p>Viết ước mơ của bạn ở đây.</p></div>
+  </div>
+</section>
+
+<!-- ===== LIÊN HỆ ===== -->
+<section id="contact" class="contact">
+  <h2 class="reveal">Kết nối với mình</h2>
+  <p class="reveal">Muốn trò chuyện hay làm quen? Cứ nhắn cho mình nhé!</p>
+  <div class="links reveal">
+    <!-- SỬA: thay bằng email và tài khoản thật của bạn -->
+    <a class="btn ghost" href="mailto:email-cua-ban@example.com">✉️ Email</a>
+    <a class="btn ghost" href="https://github.com/ten-github-cua-ban" target="_blank" rel="noopener">🐙 GitHub</a>
+    <a class="btn ghost" href="https://facebook.com/ten-facebook-cua-ban" target="_blank" rel="noopener">📘 Facebook</a>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Nguyễn Lê Hoàng Duy. Làm bằng HTML, CSS và JavaScript.</footer>
+<script src="script.js" defer></script>
 </body>
 </html>
