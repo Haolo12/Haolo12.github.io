@@ -11,7 +11,6 @@
      4. Added subtle ~60ms delay to `.membrane-card` border highlight & glow on touch
         to keep scrolling and touch interactions silky smooth.
    ========================================================================== */
-
 (function () {
   'use strict';
 
